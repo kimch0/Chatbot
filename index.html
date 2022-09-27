@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chatbot</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="gridContainer">
+        <div class="col"></div>
+
+        <div id="bot">
+          <div id="headerContainer">
+            <h2 class="title">Q&A</h2>
+          </div>
+          <div id="textBox">
+            <div style="display: flex; justify-content: space-around">
+              <button
+                class="buttonLanguage animate__animated animate__fadeInUp"
+                value="Español"
+                onclick="language(this.value)"
+              >
+                Español
+              </button>
+              <button
+                class="buttonLanguage animate__animated animate__fadeInUp"
+                value="English"
+                onclick="language(this.value)"
+              >
+                English
+              </button>
+            </div>
+            
+          </div>
+        </div>
+
+        <div id="options">
+          <div id="english">
+            <ul style="list-style: none" id="optionsList">
+              <li>
+                <!-- Option beginning 1 -->
+                <button class="optionEn animate__animated animate__fadeInRight">
+                  Tell me about you
+                </button>
+              </li>
+              <li>
+                <!-- Option beginning 1 -->
+                <button class="optionEn animate__animated animate__fadeInRight">
+                  What are your hobbies?
+                </button>
+              </li>
+              <li>
+                <!-- Option beginning 1 -->
+                <button class="optionEn animate__animated animate__fadeInRight">
+                  What are your weaknesses?
+                </button>
+              </li>
+              <li>
+                <!-- Option beginning 1 -->
+                <button class="optionEn animate__animated animate__fadeInRight">
+                  Languages
+                </button>
+              </li>
+              <li>
+                <!-- Option beginning 1 -->
+                <button class="optionEn animate__animated animate__fadeInRight">
+                  How many technologies do you know?
+                </button>
+              </li>
+              <li>
+                <!-- Option beginning 1 -->
+                <button
+                  class=" animate__animated animate__fadeInRight"
+                  id="lastQuestion"
+                >
+                  I have another question
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div id="spanish">
+            <ul style="list-style: none" id="optionsList">
+              <li>
+                <!-- Option beginning 1 -->
+                <button class="optionEs animate__animated animate__fadeInRight">
+                  Háblame de ti
+                </button>
+              </li>
+              <li>
+                <!-- Option beginning 2 -->
+                <button class="optionEs animate__animated animate__fadeInRight">
+                  ¿Qué te gusta hacer en tu tiempo libre?
+                </button>
+              </li>
+              <li>
+                <!-- Option beginning 3 -->
+                <button class="optionEs animate__animated animate__fadeInRight">
+                  ¿Cuáles son tus debilidades?
+                </button>
+              </li>
+              <li>
+                <!-- Option beginning 4 -->
+                <button class="optionEs animate__animated animate__fadeInRight">
+                  ¿Idiomas?
+                </button>
+              </li>
+              <li>
+                <!-- Option beginning 5 -->
+                <button class="optionEs animate__animated animate__fadeInRight">
+                  ¿Tecnologías que conoces?
+                </button>
+              </li>
+              <li>
+                <!-- Last question beginning 5 -->
+                <button
+                  class="animate__animated animate__fadeInRight"
+                  id="lastQuestionEs"
+                >
+                  Tengo otra pregunta
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
